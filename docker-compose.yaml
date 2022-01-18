@@ -1,7 +1,7 @@
 version: '3'
 services:
   nginx:
-    image: nginx:1.17.2-alpine
+    image: nginx:1.21.4-alpine
     ports:
       - '3000:80'
     volumes:
@@ -22,7 +22,7 @@ services:
     volumes:
       - mongo-db:/data/db
   redis:
-    image: redis
+    image: redis:6.2.6-alpine
     ports:
       - '6379:6379'
 
